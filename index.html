@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Bubbles Game</title>
+<script src="bubble.js"></script>
+ <style type="text/css">
+    #container {
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+        width:300px;
+    }
+
+    canvas {
+        position:absolute;
+        top:0px;
+        left:0px;
+        border:1px solid;
+    }
+
+    
+    
+    #menu-pause {
+        position:absolute;
+        top:100px;
+        left:100px;
+        width:200px;
+        padding:0px;
+        margin:0px;
+        list-style-type: none;
+        background-color:rgba(0,0,128,0.6);
+        border-radius: 8px;
+    }
+ 
+    .menu-items {
+        padding:0px;
+    }
+
+    .menu-items li{
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color:rgba(0,0,180,0.7);
+        font-family: sans-serif;
+        color: #FFF;
+        width:86%;
+        margin-left:7%;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        border:1px solid #00F;
+        border-radius: 8px;
+    }
+    
+    .menu-items li:hover{
+        background-color:rgba(0,0,128,1);        
+    }
+
+    #menu-game-over {
+        position:absolute;
+        display:block;
+        top:100px;
+        left:100px;
+        width:200px;
+        padding:0px;
+        margin:0px;
+        list-style-type: none;
+        background-color:rgba(0,0,128,0.6);
+        border-radius: 8px;
+        font-family:sans-serif;
+        color:white;
+    }
+    #menu-game-over h1,h2 {
+        text-align:center;
+    }
+
+    
+ </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8796768128400226"
+     crossorigin="anonymous"></script>
+<script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+</head>
+<body>
+<h1 style="text-align:center;">Bubbles</h1>
+<div id="container">
+    <canvas id="c" width="300" height="400" ></canvas>
+    <canvas id="c2" width="300" height="400"></canvas>
+    <div id="menu-pause">
+        <ul class="menu-items">
+            <li id="action_restart">Restart</li>
+            <li id="action_resume">Resume</li>
+            <li id="action_about">About</li>
+        </ul>
+    </div>
+    <div id="menu-game-over" >
+        <h1 id="txt-win-lose"> Game Over! </h1>
+        <h2 style="display:none" id="txt-score"> Score: xx </h2>
+        <ul class="menu-items">
+            <li id="action_replay">Play Again</li>
+        </ul>
+    </div>
+</div>
+<!--
+<textarea cols="100" rows="23" id="console" disabled="disabled" style="background:#000000; color:#00FF00"></textarea>
+--><amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-8796768128400226">
+</amp-auto-ads>
+</body>
+</html>
